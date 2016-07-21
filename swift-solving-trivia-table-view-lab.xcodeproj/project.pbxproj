@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1BF8D03B1D411E2B00E995E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8D03A1D411E2B00E995E6 /* AppDelegate.swift */; };
-		1BF8D03D1D411E2B00E995E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8D03C1D411E2B00E995E6 /* ViewController.swift */; };
 		1BF8D0401D411E2B00E995E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8D03E1D411E2B00E995E6 /* Main.storyboard */; };
 		1BF8D0421D411E2B00E995E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8D0411D411E2B00E995E6 /* Assets.xcassets */; };
 		1BF8D0451D411E2B00E995E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8D0431D411E2B00E995E6 /* LaunchScreen.storyboard */; };
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		1BF8D0371D411E2B00E995E6 /* swift-solving-trivia-table-view-lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-solving-trivia-table-view-lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF8D03A1D411E2B00E995E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BF8D03C1D411E2B00E995E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1BF8D03F1D411E2B00E995E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BF8D0411D411E2B00E995E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BF8D0441D411E2B00E995E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				1BF8D03A1D411E2B00E995E6 /* AppDelegate.swift */,
-				1BF8D03C1D411E2B00E995E6 /* ViewController.swift */,
 				1BF8D03E1D411E2B00E995E6 /* Main.storyboard */,
 				1BF8D0411D411E2B00E995E6 /* Assets.xcassets */,
 				1BF8D0431D411E2B00E995E6 /* LaunchScreen.storyboard */,
@@ -197,7 +194,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BF8D03D1D411E2B00E995E6 /* ViewController.swift in Sources */,
 				1BF8D03B1D411E2B00E995E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +386,7 @@
 				1BF8D0561D411E2B00E995E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BF8D0571D411E2B00E995E6 /* Build configuration list for PBXNativeTarget "swift-solving-trivia-table-view-labTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +395,7 @@
 				1BF8D0591D411E2B00E995E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
