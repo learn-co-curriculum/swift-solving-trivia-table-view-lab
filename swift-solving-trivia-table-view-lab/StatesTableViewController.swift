@@ -84,9 +84,15 @@ class StatesTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        var alertMessage: String
         
+        if lettersAreShared(indexPath.row) {
+            alertMessage = "No dice, broski!"
+        } else {
+            alertMessage = "Winner winner, chicken dinner!"
+        }
         
-        let alertController = UIAlertController.init(title: "title", message: "message", preferredStyle: .Alert)
+        let alertController = UIAlertController.init(title: "Result", message: alertMessage, preferredStyle: .Alert)
         let action = UIAlertAction(title: "okay gake", style: .Cancel) { (action) in
             
         }
@@ -94,7 +100,14 @@ class StatesTableViewController: UITableViewController {
         alertController.addAction(action)
         
         self.presentViewController(alertController, animated: true) { 
-            print("alert presented. neato.")
+            print("alert presented. neato!")
         }
+    }
+    
+    func lettersAreShared(row: Int) -> Bool {
+        
+        
+        
+        return false
     }
 }
