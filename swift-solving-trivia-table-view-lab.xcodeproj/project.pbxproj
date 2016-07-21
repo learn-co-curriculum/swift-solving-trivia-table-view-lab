@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1BF8D03B1D411E2B00E995E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8D03A1D411E2B00E995E6 /* AppDelegate.swift */; };
-		1BF8D03D1D411E2B00E995E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8D03C1D411E2B00E995E6 /* ViewController.swift */; };
 		1BF8D0401D411E2B00E995E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8D03E1D411E2B00E995E6 /* Main.storyboard */; };
 		1BF8D0421D411E2B00E995E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8D0411D411E2B00E995E6 /* Assets.xcassets */; };
 		1BF8D0451D411E2B00E995E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8D0431D411E2B00E995E6 /* LaunchScreen.storyboard */; };
 		1BF8D0501D411E2B00E995E6 /* swift_solving_trivia_table_view_labTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8D04F1D411E2B00E995E6 /* swift_solving_trivia_table_view_labTests.swift */; };
+		1BF8D05B1D41248A00E995E6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8D05A1D41248A00E995E6 /* TableViewController.swift */; };
+		1BF8D05D1D4124AE00E995E6 /* StatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8D05C1D4124AE00E995E6 /* StatesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* Begin PBXFileReference section */
 		1BF8D0371D411E2B00E995E6 /* swift-solving-trivia-table-view-lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-solving-trivia-table-view-lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF8D03A1D411E2B00E995E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BF8D03C1D411E2B00E995E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1BF8D03F1D411E2B00E995E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BF8D0411D411E2B00E995E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BF8D0441D411E2B00E995E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		1BF8D04B1D411E2B00E995E6 /* swift-solving-trivia-table-view-labTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-solving-trivia-table-view-labTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF8D04F1D411E2B00E995E6 /* swift_solving_trivia_table_view_labTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_solving_trivia_table_view_labTests.swift; sourceTree = "<group>"; };
 		1BF8D0511D411E2B00E995E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BF8D05A1D41248A00E995E6 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1BF8D05C1D4124AE00E995E6 /* StatesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				1BF8D03A1D411E2B00E995E6 /* AppDelegate.swift */,
-				1BF8D03C1D411E2B00E995E6 /* ViewController.swift */,
 				1BF8D03E1D411E2B00E995E6 /* Main.storyboard */,
 				1BF8D0411D411E2B00E995E6 /* Assets.xcassets */,
 				1BF8D0431D411E2B00E995E6 /* LaunchScreen.storyboard */,
 				1BF8D0461D411E2B00E995E6 /* Info.plist */,
+				1BF8D05A1D41248A00E995E6 /* TableViewController.swift */,
+				1BF8D05C1D4124AE00E995E6 /* StatesTableViewController.swift */,
 			);
 			path = "swift-solving-trivia-table-view-lab";
 			sourceTree = "<group>";
@@ -197,8 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BF8D03D1D411E2B00E995E6 /* ViewController.swift in Sources */,
 				1BF8D03B1D411E2B00E995E6 /* AppDelegate.swift in Sources */,
+				1BF8D05D1D4124AE00E995E6 /* StatesTableViewController.swift in Sources */,
+				1BF8D05B1D41248A00E995E6 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
