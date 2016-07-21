@@ -84,29 +84,39 @@ class StatesTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        var alertMessage: String
-        
-        if lettersAreShared(indexPath.row) {
-            alertMessage = "No dice, broski!"
-        } else {
-            alertMessage = "Winner winner, chicken dinner!"
-        }
-        
-        let alertController = UIAlertController.init(title: "Result", message: alertMessage, preferredStyle: .Alert)
-        let action = UIAlertAction(title: "okay gake", style: .Cancel) { (action) in
+        if let state = tableView.cellForRowAtIndexPath(indexPath)?.textLabel?.text {
             
-        }
-        
-        alertController.addAction(action)
-        
-        self.presentViewController(alertController, animated: true) { 
-            print("alert presented. neato!")
+            var alertMessage: String
+            
+            if lettersAreShared(state) {
+                alertMessage = "No dice, broski!"
+            } else {
+                alertMessage = "Winner winner, chicken dinner!"
+            }
+            
+            let alertController = UIAlertController.init(title: "Result", message: alertMessage, preferredStyle: .Alert)
+            let action = UIAlertAction(title: "okay gake", style: .Cancel) { (action) in
+                
+            }
+            
+            alertController.addAction(action)
+            
+            self.presentViewController(alertController, animated: true) {
+                print("alert presented. neato!")
+            }
         }
     }
     
-    func lettersAreShared(row: Int) -> Bool {
+    func lettersAreShared(state: String) -> Bool {
         
-        
+        if let capital = statesAndCapitals[state]{
+            
+            let stateSet = Set(state.lowercaseString.characters).sort()
+            
+            let capitalSet = Set(capital.lowercaseString.characters).sort()
+            
+            return (stateSet.map { capitalSet.contains($0) }).contains(true)
+        }
         
         return false
     }
