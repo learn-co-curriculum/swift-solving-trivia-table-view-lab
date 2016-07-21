@@ -61,7 +61,8 @@ class StatesTableViewController: UITableViewController {
         "Washington":"Olympia",
         "West Virginia":"Charleston",
         "Wisconsin":"Madison",
-        "Wyoming":"Cheyenne"]
+        "Wyoming":"Cheyenne"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,5 +80,21 @@ class StatesTableViewController: UITableViewController {
         cell.textLabel?.text = sortedStates[indexPath.row]
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
+        
+        let alertController = UIAlertController.init(title: "title", message: "message", preferredStyle: .Alert)
+        let action = UIAlertAction(title: "okay gake", style: .Cancel) { (action) in
+            
+        }
+        
+        alertController.addAction(action)
+        
+        self.presentViewController(alertController, animated: true) { 
+            print("alert presented. neato.")
+        }
     }
 }
