@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2CE0591D414C3D0031430B /* Sergey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CE0581D414C3D0031430B /* Sergey.swift */; };
+		1B2CE05B1D414F9A0031430B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CE05A1D414F9A0031430B /* TableViewController.swift */; };
 		1BF8D03B1D411E2B00E995E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8D03A1D411E2B00E995E6 /* AppDelegate.swift */; };
 		1BF8D0401D411E2B00E995E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8D03E1D411E2B00E995E6 /* Main.storyboard */; };
 		1BF8D0421D411E2B00E995E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8D0411D411E2B00E995E6 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B2CE0581D414C3D0031430B /* Sergey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sergey.swift; sourceTree = "<group>"; };
+		1B2CE05A1D414F9A0031430B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1BF8D0371D411E2B00E995E6 /* swift-solving-trivia-table-view-lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-solving-trivia-table-view-lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF8D03A1D411E2B00E995E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BF8D03F1D411E2B00E995E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,7 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				1BF8D03A1D411E2B00E995E6 /* AppDelegate.swift */,
+				1B2CE0581D414C3D0031430B /* Sergey.swift */,
 				1BF8D03E1D411E2B00E995E6 /* Main.storyboard */,
+				1B2CE05A1D414F9A0031430B /* TableViewController.swift */,
 				1BF8D0411D411E2B00E995E6 /* Assets.xcassets */,
 				1BF8D0431D411E2B00E995E6 /* LaunchScreen.storyboard */,
 				1BF8D0461D411E2B00E995E6 /* Info.plist */,
@@ -194,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2CE0591D414C3D0031430B /* Sergey.swift in Sources */,
+				1B2CE05B1D414F9A0031430B /* TableViewController.swift in Sources */,
 				1BF8D03B1D411E2B00E995E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
