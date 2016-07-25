@@ -37,23 +37,6 @@ class TableViewController: UITableViewController {// want to take properties, me
         
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        print("you tapped me\(indexPath.row)")
-        isUniqueStateAndCapital((tableView.cellForRowAtIndexPath(indexPath)?.textLabel?.text)!)
-        
-    }
-    
-    func isUniqueStateAndCapital (state: String) -> Bool {
-    
-//        for character in state {
-//            
-//        }
-        
-        return true
-    
-    }
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell { //calling tableView and returns a tableViewCell, which is...this tableView is attached to this view controller. creating cell at a certain row, indexPath.row gives us that row. IndexPath is cells are kept in a collection/tableView ...keeps track of order of cells.
         
         let cell = tableView.dequeueReusableCellWithIdentifier("basicCell", forIndexPath: indexPath)//calling on current tableView and please dequeue reusable cell (the queue/like the line of cells waiting to be used). So if 10 cells are visible at a time in view, as you're scrolling, the next 2 are getting ready to be loaded to view/be shown (save on memory space). Getting taken off the bench and put in the game. Btw are you a basic cell? Therefore, need identifier to get the call (specifying what kind of cell we want).
@@ -68,6 +51,49 @@ class TableViewController: UITableViewController {// want to take properties, me
         
         return cell
     }
+    // tap on cell, alert should show up "winner" or "no match"
+    //logic should check for matching characters, and return unique state
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let stateName = (tableView.cellForRowAtIndexPath(indexPath)?.textLabel?.text)!
+        
+        let lettersOverlap = isNotUniqueStateAndCapital(stateName)
+        
+        if let capitalName = statesAndCapitals[stateName]{
+            
+            print("You tapped me \(capitalName), \(stateName) and do the letters overlap? \(lettersOverlap).")
+        
+        }
+        
+        showAlert(lettersOverlap)
+    }
+    
+    func isNotUniqueStateAndCapital (state: String) -> Bool {
+        
+        if let capital = statesAndCapitals[state]{
+            let stateSet = Set(state.lowercaseString.characters).sort()
+            let capitalSet = Set(capital.lowercaseString.characters).sort()
+           // print("\(stateSet)\n\n\(capitalSet)")
+            return (stateSet.map { capitalSet.contains($0) }).contains(true)
+        }
+        
+        return false
+        
+    }
+    
+    func showAlert(lettersOverlap: Bool, stateAndCapital: (String, String)) {
+        
+        print("Hi! We're about to show an alert!")
+        
+//        if lettersOverlap {
+//           
+//        }
+        
+       let alertNotification = UIAlertController.init(title: "Winner", message: "\() and Capital are unique", preferredStyle: <#T##UIAlertControllerStyle#>)
+        
+        
+    }
 }
-// tap on cell, alert should show up "winner" or "no match" 
-//logic should check for matching characters, and return unique state
+
+
+
