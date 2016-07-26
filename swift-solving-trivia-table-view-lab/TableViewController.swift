@@ -16,7 +16,7 @@ class TableViewController: UITableViewController {// want to take properties, me
     //initialization of copy of Location struc's dictionary
     
     //won't compile because statesAndCapitals doesn't have data in it until... (can't call on a property from another property)
-
+    
     override func viewDidLoad() {//sequence when you open a new view,inherent methods that get called: viewWillLoad, viewDidLoad (loaded into memory), viewWillAppear, viewDidAppear (final plans). Must override because our super class has viewDidLoad, this is the one we want so listen to it.
         
         super.viewDidLoad() // super class is UITableViewController, calling viewDidLoad and its initializer
@@ -27,13 +27,13 @@ class TableViewController: UITableViewController {// want to take properties, me
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {//calling tableView and setting number of rows dynamically (using count)
-//         tableView(UITableView, cellForRowAtIndexPath: <#T##NSIndexPath#>)
+        //         tableView(UITableView, cellForRowAtIndexPath: <#T##NSIndexPath#>)
         //external name of variable, what it looks like when that function gets called
         
-    //print(location.Bettina)
+        //print(location.Bettina)
         
         //call the instance we created that's a copy of the struct. Bettina is attached to that copy.
-    return statesAndCapitals.count
+        return statesAndCapitals.count
         
     }
     
@@ -55,44 +55,70 @@ class TableViewController: UITableViewController {// want to take properties, me
     //logic should check for matching characters, and return unique state
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
         let stateName = (tableView.cellForRowAtIndexPath(indexPath)?.textLabel?.text)!
         
-        let lettersOverlap = isNotUniqueStateAndCapital(stateName)
+        let lettersOverlapFlag = lettersOverlapFunction(stateName)
         
-        if let capitalName = statesAndCapitals[stateName]{
+        var capitalNameUnwrapped = String()
+        
+        if let capitalName = statesAndCapitals[stateName] {
             
-            print("You tapped me \(capitalName), \(stateName) and do the letters overlap? \(lettersOverlap).")
-        
+            capitalNameUnwrapped = capitalName
+            
+            print("You tapped me \(capitalName), \(stateName) and do the letters overlap? \(lettersOverlapFlag).")
         }
         
-        showAlert(lettersOverlap)
+        showAlert(lettersOverlapFlag, stateAndCapital: (stateName, capitalNameUnwrapped))
+        
     }
     
-    func isNotUniqueStateAndCapital (state: String) -> Bool {
+    func lettersOverlapFunction (state: String) -> Bool {
         
         if let capital = statesAndCapitals[state]{
             let stateSet = Set(state.lowercaseString.characters).sort()
             let capitalSet = Set(capital.lowercaseString.characters).sort()
-           // print("\(stateSet)\n\n\(capitalSet)")
+            //            print("State: \(stateSet)\nCapital: \(capitalSet)")
             return (stateSet.map { capitalSet.contains($0) }).contains(true)
         }
         
         return false
-        
     }
     
     func showAlert(lettersOverlap: Bool, stateAndCapital: (String, String)) {
         
-        print("Hi! We're about to show an alert!")
+        //        print("Hi! We're about to show an alert!")
         
-//        if lettersOverlap {
-//           
+//        if !lettersOverlap {
+//            
+//            print("You win")
+//        } else {
+//            
+//            print("Sorry, you lose")
 //        }
+
+        var alertTitle = ""
+        var message = ""
         
-       let alertNotification = UIAlertController.init(title: "Winner", message: "\() and Capital are unique", preferredStyle: <#T##UIAlertControllerStyle#>)
+        if lettersOverlap {
+            alertTitle = "You lose"
+            message = "Try again"
+        } else {
+            alertTitle = "Winner winner"
+            message = "chicken dinner"
+        }
         
         
-    }
+        
+        let alertNotification = UIAlertController.init(title: alertTitle, message: message, preferredStyle: .Alert)
+        
+        let alertAction = UIAlertAction(title: "Try Again", style: .Cancel, handler: nil)
+        
+        alertNotification.addAction(alertAction)
+        
+        self.presentViewController(alertNotification, animated: true, completion: nil)
+        
+        }
 }
 
 
