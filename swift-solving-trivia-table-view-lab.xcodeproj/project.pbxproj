@@ -11,18 +11,7 @@
 		1BF8D0401D411E2B00E995E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8D03E1D411E2B00E995E6 /* Main.storyboard */; };
 		1BF8D0421D411E2B00E995E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8D0411D411E2B00E995E6 /* Assets.xcassets */; };
 		1BF8D0451D411E2B00E995E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8D0431D411E2B00E995E6 /* LaunchScreen.storyboard */; };
-		1BF8D0501D411E2B00E995E6 /* swift_solving_trivia_table_view_labTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8D04F1D411E2B00E995E6 /* swift_solving_trivia_table_view_labTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1BF8D04C1D411E2B00E995E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1BF8D02F1D411E2B00E995E6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1BF8D0361D411E2B00E995E6;
-			remoteInfo = "swift-solving-trivia-table-view-lab";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1BF8D0371D411E2B00E995E6 /* swift-solving-trivia-table-view-lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-solving-trivia-table-view-lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,20 +20,10 @@
 		1BF8D0411D411E2B00E995E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BF8D0441D411E2B00E995E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BF8D0461D411E2B00E995E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BF8D04B1D411E2B00E995E6 /* swift-solving-trivia-table-view-labTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-solving-trivia-table-view-labTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BF8D04F1D411E2B00E995E6 /* swift_solving_trivia_table_view_labTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_solving_trivia_table_view_labTests.swift; sourceTree = "<group>"; };
-		1BF8D0511D411E2B00E995E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1BF8D0341D411E2B00E995E6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BF8D0481D411E2B00E995E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,7 +37,6 @@
 			isa = PBXGroup;
 			children = (
 				1BF8D0391D411E2B00E995E6 /* swift-solving-trivia-table-view-lab */,
-				1BF8D04E1D411E2B00E995E6 /* swift-solving-trivia-table-view-labTests */,
 				1BF8D0381D411E2B00E995E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				1BF8D0371D411E2B00E995E6 /* swift-solving-trivia-table-view-lab.app */,
-				1BF8D04B1D411E2B00E995E6 /* swift-solving-trivia-table-view-labTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,15 +59,6 @@
 				1BF8D0461D411E2B00E995E6 /* Info.plist */,
 			);
 			path = "swift-solving-trivia-table-view-lab";
-			sourceTree = "<group>";
-		};
-		1BF8D04E1D411E2B00E995E6 /* swift-solving-trivia-table-view-labTests */ = {
-			isa = PBXGroup;
-			children = (
-				1BF8D04F1D411E2B00E995E6 /* swift_solving_trivia_table_view_labTests.swift */,
-				1BF8D0511D411E2B00E995E6 /* Info.plist */,
-			);
-			path = "swift-solving-trivia-table-view-labTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,24 +81,6 @@
 			productReference = 1BF8D0371D411E2B00E995E6 /* swift-solving-trivia-table-view-lab.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1BF8D04A1D411E2B00E995E6 /* swift-solving-trivia-table-view-labTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1BF8D0571D411E2B00E995E6 /* Build configuration list for PBXNativeTarget "swift-solving-trivia-table-view-labTests" */;
-			buildPhases = (
-				1BF8D0471D411E2B00E995E6 /* Sources */,
-				1BF8D0481D411E2B00E995E6 /* Frameworks */,
-				1BF8D0491D411E2B00E995E6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1BF8D04D1D411E2B00E995E6 /* PBXTargetDependency */,
-			);
-			name = "swift-solving-trivia-table-view-labTests";
-			productName = "swift-solving-trivia-table-view-labTests";
-			productReference = 1BF8D04B1D411E2B00E995E6 /* swift-solving-trivia-table-view-labTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -143,10 +93,6 @@
 				TargetAttributes = {
 					1BF8D0361D411E2B00E995E6 = {
 						CreatedOnToolsVersion = 7.3.1;
-					};
-					1BF8D04A1D411E2B00E995E6 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 1BF8D0361D411E2B00E995E6;
 					};
 				};
 			};
@@ -164,7 +110,6 @@
 			projectRoot = "";
 			targets = (
 				1BF8D0361D411E2B00E995E6 /* swift-solving-trivia-table-view-lab */,
-				1BF8D04A1D411E2B00E995E6 /* swift-solving-trivia-table-view-labTests */,
 			);
 		};
 /* End PBXProject section */
@@ -180,13 +125,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BF8D0491D411E2B00E995E6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -198,23 +136,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BF8D0471D411E2B00E995E6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BF8D0501D411E2B00E995E6 /* swift_solving_trivia_table_view_labTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1BF8D04D1D411E2B00E995E6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1BF8D0361D411E2B00E995E6 /* swift-solving-trivia-table-view-lab */;
-			targetProxy = 1BF8D04C1D411E2B00E995E6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1BF8D03E1D411E2B00E995E6 /* Main.storyboard */ = {
@@ -343,30 +265,6 @@
 			};
 			name = Release;
 		};
-		1BF8D0581D411E2B00E995E6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "swift-solving-trivia-table-view-labTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "FlatironSchool.com.swift-solving-trivia-table-view-labTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-solving-trivia-table-view-lab.app/swift-solving-trivia-table-view-lab";
-			};
-			name = Debug;
-		};
-		1BF8D0591D411E2B00E995E6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "swift-solving-trivia-table-view-labTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "FlatironSchool.com.swift-solving-trivia-table-view-labTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-solving-trivia-table-view-lab.app/swift-solving-trivia-table-view-lab";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -384,15 +282,6 @@
 			buildConfigurations = (
 				1BF8D0551D411E2B00E995E6 /* Debug */,
 				1BF8D0561D411E2B00E995E6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1BF8D0571D411E2B00E995E6 /* Build configuration list for PBXNativeTarget "swift-solving-trivia-table-view-labTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BF8D0581D411E2B00E995E6 /* Debug */,
-				1BF8D0591D411E2B00E995E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
